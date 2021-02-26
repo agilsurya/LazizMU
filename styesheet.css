@@ -1,0 +1,346 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body		{
+	font-family: Open Sans,Arial,sans-serif;
+}
+
+a		{
+	text-decoration: none;
+}
+
+.container		{
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+header 		{
+	height: 65px;
+	width: 100%;
+	background-color: rgb(255, 255, 255) ;
+	position: fixed;
+	top:0;
+	z-index: 10;
+	border-bottom: 2px solid #FE8101;
+}
+
+.header-logo {
+    width: 75px;
+    margin-top: 7px;
+}
+
+.header-left		{
+	float: left;
+}
+
+.nav	{
+	float: right;
+	margin-right: -25px;
+}
+.nav li {
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	padding-right: 22px;
+	position: relative;
+	top: 21.5px;
+}
+
+.nav a {
+	text-decoration: none;
+	display: block;
+	position: relative;
+	transition: all .4s ease-in-out;
+	padding: 0px 20px 0px 0px;
+	color: #313131; 
+	font-weight: 600;
+}
+
+.nav a:hover {
+	color: #b57e1f;
+}
+
+.slide-image{
+	width: 100%;
+	margin-top: 65px;
+	opacity: 1;
+	width: 100%
+}
+
+.image-entity	{
+	position: relative;
+	background-size: : cover;
+}
+
+.mySlide img {
+	width: 100%;
+	display: none;
+	position: relative;
+	margin: auto;
+}
+
+.slick-dots		{
+	text-align: center;
+}
+
+.slideshow-container		{
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+}
+
+.prev-btn, .next-btn	{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: black;
+	font-weight: bold;
+	font-size: 62px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next-btn	{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover	{
+	background-color: white;
+}
+
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.numbertext	{
+	color: black;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 73px;
+    left: 18px;
+}
+
+.dot 	{
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover	{
+	background-color: #717171;
+}
+
+.fade	{
+	-webkit-animation-name:fade;
+	-webkit-animation-duration:1.5s;
+	animation-name:fade;
+	animation-duration: 1.5s;
+}
+
+@webkit-keyframes fade	{
+	from{opacity:.4}
+	to{opacity: 1}
+}
+
+@keyframes fade {
+	from{opacity: .4}
+	to{opacity: :1}
+}
+
+
+/*.header-right		{
+	float: right;
+	margin-right: -25px;
+}
+
+.header-right .ambulan {
+	background-color: red;
+	color: white;
+}
+
+.header-right .ambulan:hover		{
+	background-color: #b50000;
+	color: white;
+}
+
+.header-right a {
+	line-height: 65px;
+	padding: 0 25px ;
+	color: black ;
+	display: block;
+	float: left;
+	transition: all 0.5s;
+}
+
+.header-right a:hover		{
+	background-color: rgb(254, 129, 1);
+	color: white;*/
+}
+
+/*.top-wrapper		{
+	padding: 180px 0 100px 0;
+	background-image: url(assets/Campaign-Program-Donasi-Pendidikan-Panti.jpg);
+	background-size: cover;
+	color: black;
+	text-align: center;
+}
+
+.top-wrapper h1		{
+	font-size: 45px;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+}
+
+.top-wrapper p 		{
+	margin-bottom: 3px ; 
+}
+
+.btn-wrapper		{
+	text-align: center;
+	margin: 20px 0;
+} 
+
+.btn-wrapper p 		{
+	margin: 10px 0;
+}
+
+.signup		{
+	background-color: #FE8101;
+}
+
+.facebook		{
+	background-color:#3b5998;
+	margin-right:10px;
+}
+
+
+.twitter		{
+	background-color: #55acee;
+}
+
+.btn 			{
+	padding: 12px 24px;
+	color: white;
+	display: inline-block;
+	opacity: 0.85;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.btn:hover		{
+	opacity: 1;
+}
+
+.lesson-wrapper		{
+	padding-bottom: 80px;
+	padding-right: 5%;
+	padding-left: 5%;
+	background-color:#f7f7f7;
+	text-align: center;
+}
+
+.heading		{
+	padding-top: 80px;
+	padding-bottom: 50px;
+	color: #5f5d60;
+}
+
+.heading h2		{
+	font-weight: normal;
+}
+
+.lesson	{
+	float: left;
+	width: 25%;
+}
+
+.lesson-icon		{
+	position: relative;
+}
+
+.lesson-icon p {
+	position: absolute;
+	top: 44%;
+	width: 100%;
+	color: white;
+}
+
+.txt-content		{
+	width: 80%;
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 15px;
+	color: #b3aeb5;
+}
+
+
+.heading h3		{
+	font-weight: normal;
+}
+
+.massage-wrapper		{
+	border-bottom: 1px solid #FE8101;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+.massage 		{
+	padding:15px 40px;
+	background-color: #FE8101; 
+	cursor: pointer;
+	box-shadow: 0px 7px #ecb882;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+.massage:active		{
+	position: relative;
+	top: 7px;
+	box-shadow: none;
+}
+
+footer img 	{
+	width: 125px;
+}
+
+footer p 	{
+	color: #5f5d6;
+	font-size: 8px;
+	font-weight: bold;
+}
+
+footer	{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}*/
